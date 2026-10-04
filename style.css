@@ -1,242 +1,639 @@
+/* =========================================
+   COTTAGE & CANOPY
+   MAIN STYLESHEET
+   ========================================= */
+
+
+/* ---------- GENERAL ---------- */
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    background-color: #f7f2e7;
-    color: #3f4635;
     font-family: Georgia, "Times New Roman", serif;
+    background-color: #f7f2e7;
+    color: #33382b;
+    line-height: 1.6;
 }
 
-/* HEADER */
+main {
+    min-height: 500px;
+}
+
+h1,
+h2,
+h3 {
+    color: #66764f;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
 
 header {
-    background-color: #718158;
+    background-color: #75855d;
     color: white;
-    padding: 25px 8%;
 }
 
 .branding {
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px 25px;
 
-.logo {
-    width: 110px;
-    height: 80px;
-    border: 3px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.7em;
-    font-weight: bold;
+    gap: 20px;
 }
 
-header h1 {
+
+/* Cottage & Canopy Logo */
+
+.site-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+
+/* Website Name */
+
+.brand-text h1 {
+    color: white;
+    font-size: 2.3em;
     margin: 0;
-    font-size: 2.8em;
 }
 
-header p {
-    margin: 5px 0 0;
-    font-size: 1.1em;
+.brand-text p {
+    color: white;
+    margin: 2px 0 0;
 }
 
-/* NAVIGATION */
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
 
 nav {
-    background-color: #d8c49d;
+    background-color: #dfc99c;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 nav a {
-    color: #3f4635;
+    color: #35402d;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 25px;
+    margin: 0 22px;
+}
+
+nav a:visited {
+    color: #35402d;
 }
 
 nav a:hover {
-    color: #8b5e3c;
+    color: #8a5735;
     text-decoration: underline;
 }
 
-/* MAIN */
 
-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 30px;
-}
+/* =========================================
+   HOME PAGE HERO
+   ========================================= */
 
-/* HERO */
-
-.hero {
-    min-height: 320px;
-    background-color: #ddd2b8;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home-hero {
+    background-color: #e8dfc9;
     text-align: center;
-    margin-bottom: 35px;
-    padding: 40px;
+    padding: 30px 20px 35px;
 }
 
-.hero-text {
-    background-color: rgba(247, 242, 231, 0.9);
-    padding: 25px 40px;
-    border-radius: 10px;
+
+/* Learning & Growing Image */
+
+.hero-image {
+    display: block;
+
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+
+    margin: 0 auto;
 }
 
-.hero h2 {
-    color: #65764e;
-    font-size: 2.3em;
-    margin: 0 0 10px;
-}
 
-.hero p {
+/* Text Under Hero Image */
+
+.hero-subtitle {
+    max-width: 600px;
+
+    margin: 15px auto 0;
+
     font-size: 1.1em;
+    color: #33382b;
 }
 
-/* WELCOME */
+
+/* =========================================
+   WELCOME SECTION
+   ========================================= */
 
 .welcome {
+    max-width: 800px;
+
+    margin: 0 auto;
+
     text-align: center;
-    padding: 15px 50px 35px;
+
+    padding: 55px 25px;
 }
 
 .welcome h2 {
-    color: #65764e;
-    font-size: 2.2em;
-    margin-bottom: 15px;
+    font-size: 1.9em;
+    margin-bottom: 12px;
 }
 
-.welcome p {
-    max-width: 850px;
-    margin: auto;
-    font-size: 1.1em;
-    line-height: 1.7;
-}
 
-/* FEATURED RESOURCES */
+/* =========================================
+   FEATURED RESOURCES
+   ========================================= */
 
 .featured {
-    padding: 20px 0 40px;
+    background-color: #eee5d3;
+
+    padding: 50px 25px 65px;
 }
 
 .featured > h2 {
     text-align: center;
-    color: #65764e;
-    font-size: 2.3em;
-    margin-bottom: 25px;
+
+    font-size: 1.9em;
+
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
+
+/* Three Cards */
+
 .cards {
+    max-width: 1050px;
+
+    margin: 0 auto;
+
     display: flex;
+    justify-content: center;
+    align-items: stretch;
+
     gap: 25px;
 }
 
+
+/* Individual Card */
+
 .card {
-    flex: 1;
     background-color: white;
-    border-radius: 10px;
-    padding: 18px;
+
+    flex: 1;
+
     text-align: center;
+
+    padding-bottom: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
-.card-image {
-    height: 160px;
-    background-color: #e5dcc6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #65764e;
-    font-weight: bold;
-    margin-bottom: 18px;
-    border-radius: 7px;
+
+/* Images Inside Cards */
+
+.featured-image {
+    display: block;
+
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
 }
+
+
+/* Card Titles */
 
 .card h3 {
-    color: #65764e;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    margin: 20px 15px 8px;
+
+    font-size: 1.3em;
 }
 
+
+/* Card Description */
+
 .card p {
-    min-height: 70px;
-    line-height: 1.4;
+    padding: 0 20px;
+
+    min-height: 75px;
 }
+
+
+/* =========================================
+   BUTTONS
+   ========================================= */
 
 .button {
     display: inline-block;
+
     background-color: #8b5e3c;
     color: white;
+
+    padding: 9px 18px;
+
     text-decoration: none;
-    padding: 10px 22px;
-    border-radius: 5px;
     font-weight: bold;
+
+    border-radius: 3px;
+}
+
+.button:visited {
+    color: white;
 }
 
 .button:hover {
-    background-color: #65764e;
+    background-color: #6f472c;
 }
 
-/* FOOTER */
+
+/* =========================================
+   GETTING STARTED PAGE
+   ========================================= */
+
+.page-intro {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    padding: 55px 25px 35px;
+}
+
+.page-intro h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+/* Information Sections */
+
+.content-section {
+    max-width: 850px;
+
+    margin: 0 auto 25px;
+
+    background-color: white;
+
+    padding: 25px 30px;
+
+    border-left: 5px solid #75855d;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.content-section h2 {
+    margin-top: 0;
+
+    font-size: 1.5em;
+}
+
+
+/* =========================================
+   RESOURCES PAGE
+   ========================================= */
+
+.resources-hero,
+.styles-section,
+.parent-section {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 40px 25px;
+}
+
+
+/* Resources Introduction */
+
+.resources-hero {
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.resources-hero h2 {
+    font-size: 2em;
+
+    margin-bottom: 8px;
+}
+
+
+/* Section Headings */
+
+.styles-section h2,
+.parent-section h2 {
+    text-align: center;
+
+    font-size: 1.8em;
+
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.section-intro {
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   HOMESCHOOL STYLE TABLE
+   ========================================= */
+
+.table-container {
+    overflow-x: auto;
+
+    margin-top: 25px;
+}
+
+.styles-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Table Heading */
+
+.styles-table th {
+    background-color: #75855d;
+
+    color: white;
+
+    padding: 15px;
+
+    text-align: left;
+}
+
+
+/* Table Cells */
+
+.styles-table td {
+    padding: 15px;
+
+    border-bottom: 1px solid #ddd2bb;
+}
+
+
+/* Alternating Rows */
+
+.styles-table tbody tr:nth-child(even) {
+    background-color: #eee7d7;
+}
+
+
+/* Hover */
+
+.styles-table tbody tr:hover {
+    background-color: #e4dac3;
+}
+
+
+/* =========================================
+   PARENT RESOURCE CARDS
+   ========================================= */
+
+.parent-section {
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+
+.parent-card {
+    max-width: 850px;
+
+    margin: 20px auto;
+
+    padding: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    background-color: white;
+
+    border-left: 6px solid #75855d;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Resource Icon */
+
+.parent-card-icon {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eee3c9;
+
+    border-radius: 50%;
+
+    font-size: 2em;
+}
+
+
+/* Resource Information */
+
+.parent-card-content {
+    flex: 1;
+}
+
+.parent-card-content h3 {
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.resource-tags {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
 
 footer {
-    background-color: #5f704b;
+    background-color: #75855d;
+
     color: white;
+
     text-align: center;
-    padding: 25px;
+
+    padding: 28px 20px;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 .footer-links {
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 .footer-links a {
     color: white;
+
     text-decoration: none;
-    margin: 0 12px;
+
+    margin: 0 8px;
+}
+
+.footer-links a:visited {
+    color: white;
 }
 
 .footer-links a:hover {
     text-decoration: underline;
 }
 
-footer p {
-    margin: 7px 0;
-}
 
-/* SMALLER SCREENS */
+/* =========================================
+   TABLET / SMALL SCREEN
+   ========================================= */
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+
+    /* Header */
 
     .branding {
         flex-direction: column;
+
         text-align: center;
+
+        gap: 8px;
     }
+
+    .site-logo {
+        width: 110px;
+    }
+
+    .brand-text h1 {
+        font-size: 2em;
+    }
+
+
+    /* Navigation */
 
     nav a {
         display: block;
-        margin: 10px;
+
+        margin: 7px 0;
     }
+
+
+    /* Homepage Hero */
+
+    .hero-image {
+        max-width: 450px;
+    }
+
+
+    /* Featured Cards */
 
     .cards {
         flex-direction: column;
     }
 
-    .welcome {
-        padding: 15px;
+    .card {
+        max-width: 500px;
+
+        width: 100%;
+
+        margin: 0 auto;
     }
 
-    header h1 {
-        font-size: 2.2em;
+    .featured-image {
+        height: auto;
     }
+
+
+    /* Resource Cards */
+
+    .parent-card {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+
+    /* Table */
+
+    .styles-table th,
+    .styles-table td {
+        padding: 10px;
+    }
+
+}
+
+
+/* =========================================
+   PHONES
+   ========================================= */
+
+@media (max-width: 500px) {
+
+    .site-logo {
+        width: 95px;
+    }
+
+    .brand-text h1 {
+        font-size: 1.7em;
+    }
+
+    .home-hero {
+        padding: 25px 15px 30px;
+    }
+
+    .hero-image {
+        max-width: 350px;
+    }
+
+    .welcome {
+        padding: 40px 20px;
+    }
+
+    .featured {
+        padding: 40px 20px;
+    }
+
 }
